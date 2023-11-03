@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+
+}
+
+
+.game{
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(270deg, #09251e, #46635c);
+}
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    transition: margin 0.5s ease-out;
+}
+.screen.up{
+    margin-top:-100vh ;
+}
+.game-title{
+    font-size: 48px;
+    background-color: #333;
+    padding: 10px 30px;
+    color:#fff ;
+    margin-bottom: 25px;
+    border-radius: 20px;
+   
+}
+
+.start{
+    font-size: 36px;
+    color:#fff ;
+    background-color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.start:hover{
+    color:#13cfa0;
+}
+
+.time-list{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+.time-btn{
+    border: none;
+    background-color: #09251e;
+    color: aliceblue;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.time-btn:hover {
+    color: #13cfa0;
+}
+
+.game-time{
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: #14cfa0;
+}
+
+.board {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background-color: #333;
+}
